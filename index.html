@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main-container">
+        <button class="open-btn" onclick="openForm()"> Add new Book </button>
+        <div class="form-popup">
+            <form action="">
+
+                <label for="name">Book name</label>
+                <input type="text" name="name" class="bookInput" required>
+
+                <label for="author">Author</label>
+                <input type="text" name="author" class="authorInput" required>
+
+                <label for="year">Year</label>
+                <input type="number" name="year" class="yearInput" required>
+
+                <button type="button" class="submit-btn" onclick="callAddBookToLibrary()"> Submit </button>
+                <button type="button" class="close-btn" onclick="closeForm()"> Cancel </button>
+
+            </form>
+        </div>
+        <div class="book-container">
+            
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
